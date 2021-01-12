@@ -4,7 +4,7 @@ L'obiettivo è quello di misurare la distribuzione di velocità dei raggi cosmic
 Abstract relazione di Foresi:
 Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica.
 Per questo intento useremo un apparato sperimentale schematizzato in figura. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante
-calcolata con dati presi da oscilloscopio.
+calcolata con dati presi da oscilloscopio e con ADC.
 Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella,
 si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi.
 Il primo si tratta dell'efficienza di un fotomoltiplicatore .
