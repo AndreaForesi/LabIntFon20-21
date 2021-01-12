@@ -23,7 +23,7 @@
 
 
 \begin{abstract}
-Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella, si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato però la maggior parte dei risultati ottenuti.
+Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio e con l'ADC. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella, si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato però la maggior parte dei risultati ottenuti.
 \end{abstract}
 
 
@@ -307,7 +307,7 @@ L'inverso del coefficiente angolare sarà la nostra velocità.\\
 L'errore associato alla posizione del PMT-3 è dato dalla larghezza dello scintillatore 3 (22cm) divisa $\sqrt{12}$($\sigma _x = \frac{22}{\sqrt{12}}$) poiché assumiamo che la probabilità che una particella attraversi il materiale è uniforme su tutta la larghezza del rivelatore.
 
 
-\subsection{Analisi dati}
+\subsection{Analisi dati, Oscilloscopio}
 Sono stati presi 100 di questi eventi tripli per ognuna delle posizioni scelte e ne è stata presa direttamente media e devstd prodotta dall' oscilloscopio. A quel punto ne è stato fatto un fit con la retta in equazione \ref{eq:VLuceBarra}
 
 \begin{figure}[H]
@@ -339,12 +339,39 @@ v [$\frac{cm}{ns}$] & off [ns] \\
 \hline
 \end{tabular}
 
-Il segno meno è dovuto alla scelta della differenza tra i PMT-1 e PMT-2.\\
-La velocità è risultata inferiore a quella attesa ($\sim 19\frac{cm}{ns}$) probabilmente perché il fascio di luce non compie delle traiettorie lineari dal punto in cui parte fino al fotocatodo ma riflettendosi lungo le pareti della barra scintillante compie un tragitto più lungo.
+Il segno meno è dovuto alla scelta della differenza tra i PMT-1 e PMT-2.
 
+\subsection{Analisi dati ADC}
+Per questa analisi abbiamo preso diversi segnali in coincidenza tra PMT 1-2 e 3 posizionato in alcune posizioni della barra e fatto media e devstd dei $\Delta t$ ricavati
 
+\begin{figure}[H]
+     \begin{subfigure}[b]{0.47\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{./immagini/TimeOfFlight/VLightBarraADC}
+         \caption{}
+         \label{fig:FitVLightBarraADC}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.47\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{./immagini/TimeOfFlight/ResVLightBarraADC}
+         \caption{Negli errori è stata considerata anche l'incertezza sulla posizione dovuta alla larghezza dello scintillatore 3: $\sigma = \sqrt{(\sigma _y)^2 + (\frac{\delta f(x_i)}{\delta x}\sigma _x)^2}$}
+         \label{fig:ResVLIghtBarraADC}
+     \end{subfigure}
+     \caption{}        
+     \label{fig:FitLinVLightBarraADC}
+\end{figure}
 
-\newpage
+Dal fit abbiamo ottenuto i seguenti risultati\footnote{Chi2 = 10,01, ndof = 1, norm cov= 0.64}:
+
+\begin{tabular}{|c|c|}
+\hline
+v [$\frac{cm}{ns}$] & off [ns] \\
+\hline
+-14,50 $\pm$ 0,16 & 22,31 $\pm$ 0,19\\
+\hline
+\end{tabular}
+
 \section{Misura della distribuzione di V}
 \label{sec:MisuraVMu}
 \subsection{Cenni Teorici}
@@ -662,10 +689,20 @@ OltreUnaSoglia [\%] = \frac{Cariche Alte}{Tot Eventi} \simeq \frac{61810}{76452}
 \end{figure}
 
 \section{Conclusioni}
+\subsection{Proprietà barra scintillante}
+\subsubsection{Velocità dei segnali}
+La velocità è risultata inferiore a quella attesa ($\sim 19\frac{cm}{ns}$) probabilmente perché il fascio di luce non compie delle traiettorie lineari dal punto in cui parte fino al fotocatodo ma riflettendosi lungo le pareti della barra scintillante compie un tragitto più lungo.
+
+\subsubsection{Attenuazione dei segnali}
+Per quanto riguarda i comportamenti dell'attenuazione del segnale luminoso denella barra scintillante i due fit provati in figura \ref{fig:AttenuazioneTriplaFitta} mostrano come l'andamento possa essere buono in quanto, seppur le misure non siano accurate non sono
+stati riscontrati comportamenti stravaganti.\\
+Per quanto riguarda la fascia di dati a cariche inferiori, visibile in tutti i grafici di sezione \ref{sec:Atte}, sappiamo non essere solo rumore in quanto presenti anche negli scatter plot ottenuti con eventi di triple tra PMT(1-2-3) con PMT come in figura \ref{fig:PMT3posPMT4}, e sappiamo non dipendere nemmeno dalla luce poiché una semplice verifica di conteggi a luce accesa e spenta mostra una differenza veramente irrisoria.
+
+
 \subsection{Distribuzione di V}
 La distribuzione di V di figura \ref{fig:VFore} sembra ben centrata su una media di circa 30$\frac{cm}{ns}$ con una larghezza che non spaventa. Infatti se pensiamo che i tempi di volo per particelle relativistiche sono di circa 6-8 ns(Valori stimati e anche visibili in figura \ref{fig:DistrTof}), con errori di circa 2ns dovuti alla larghezza degli istogrammi dei ritardi(vedi per esempio \ref{tab:RitFore}) si hanno errori del 30-40$\%$, riportati sulla velocità ricaviamo un'ampiezza a metà altezza di una decina di ns. Per quanto riguarda la coda della distribuzione di V che troviamo per velocità molto maggiori della luce non sembra implicata ad un'incorretta stima della posizione di incidenza ma piuttosto ad errori nella distribuzione di TOF (Vedi \ref{fig:DistrX} per la posizione e \ref{fig:DistrTof} per il tempo di volo).\\
 La normalizzazione sembra essere corretta ed equa in entrambi i casi con e senza Piombo in quanto gli integrali della distribuzione valgono entrambi 0,97
-\subsection{Particelle Relativistiche e non}
+\subsubsection{Particelle Relativistiche e non}
 \paragraph{Metodo 1}
 Dai risultati ottenuti con il primo metodo si nota dalla figura \ref{fig:VRappFore} che le particelle con velocità inferiori a 10$\frac{cm}{ns}$ sembrano essersi fermate nel piombo non raggiungendo il PMT-4, questo potrebbe aver determinato l'aumento della velocità media da 29,6$\pm$6,9 a 30,1$\pm$7,3 $\frac{cm}{ns}$; un aumento dell' 1,6$\%$ sulle medie stimate.\\
 Quello che invece non piace sono le velocità comprese tra 10 e 20 $\frac{cm}{ns}$. In questa regione seppur gli errori sulle misure siano abbastanza grandi dovremmo aver visto una salita verso un rapporto pari ad 1 cosa che invece non si riesce a vedere
@@ -691,10 +728,6 @@ Quello che si ptrebbe andare ad affermare è che il Piombo potrebbe aver frenato
 
 
 
-\subsection{Attenuazione}
-Per quanto riguarda i comportamenti dell'attenuazione del segnale luminoso denella barra scintillante i due fit provati in figura \ref{fig:AttenuazioneTriplaFitta} mostrano come l'andamento possa essere buono in quanto, seppur le misure non siano accurate non sono
-stati riscontrati comportamenti stravaganti.\\
-Per quanto riguarda la fascia di dati a cariche inferiori, visibile in tutti i grafici di sezione \ref{sec:Atte}, sappiamo non essere solo rumore in quanto presenti anche negli scatter plot ottenuti con eventi di triple tra PMT(1-2-3) con PMT come in figura \ref{fig:PMT3posPMT4}, e sappiamo non dipendere nemmeno dalla luce poiché una semplice verifica di conteggi a luce accesa e spenta mostra una differenza veramente irrisoria.
 
 
 
