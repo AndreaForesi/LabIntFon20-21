@@ -1,0 +1,12 @@
+Esperienza di Lab Di novembre 2020 di Andrea Foresi e Tommaso Lari.
+L'obiettivo è quello di misurare la distribuzione di velocità dei raggi cosmici e determinarne quale frazione fosse relativistica e quale non.
+
+Abstract relazione di Foresi:
+Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica.
+Per questo intento useremo un apparato sperimentale schematizzato in figura. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante
+calcolata con dati presi da oscilloscopio.
+Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella,
+si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi.
+Il primo si tratta dell'efficienza di un fotomoltiplicatore .
+Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori
+ dovuta a delle caratteristiche dell'ADC converter. Queste difficoltà di ricostruzione del segnale hanno segnato però la maggior parte dei risultati ottenuti.

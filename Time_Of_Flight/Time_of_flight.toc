@@ -1,0 +1,48 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Strumentazione}{2}{section.1}%
+\contentsline {paragraph}{Misure preliminari}{2}{section*.3}%
+\contentsline {section}{\numberline {2}Calibrazione Apparato sperimentale}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Discriminazione}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Alimentazione}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Coincidenze}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Ricerca Plateau}{4}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Massimizzazione dell'efficienza}{4}{subsubsection.2.3.2}%
+\contentsline {paragraph}{PMT-2; Scelta soglia discriminazione}{4}{section*.8}%
+\contentsline {paragraph}{PMT-1, soglia -35mV}{5}{section*.10}%
+\contentsline {paragraph}{PMT-4}{5}{section*.12}%
+\contentsline {section}{\numberline {3}Velocità della luce nella barra scintillante}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Cenni teorici}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Misure}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Analisi dati}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Misura della distribuzione di V}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Cenni Teorici}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Set-up}{8}{subsection.4.2}%
+\contentsline {paragraph}{ADC Converter}{8}{section*.16}%
+\contentsline {subsection}{\numberline {4.3}Calcoli}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Misure}{9}{subsection.4.4}%
+\contentsline {paragraph}{Misura del TimeStamp}{9}{section*.17}%
+\contentsline {paragraph}{Ritardi R$_{ij}$; i,j=1,2,3}{9}{section*.18}%
+\contentsline {subsection}{\numberline {4.5}Eventi Ultrarelativistici e non}{10}{subsection.4.5}%
+\contentsline {paragraph}{Conti sul Piombo}{10}{section*.21}%
+\contentsline {paragraph}{2 Metodi}{10}{section*.22}%
+\contentsline {paragraph}{Efficienza PMT-4}{11}{section*.27}%
+\contentsline {section}{\numberline {5}Attenuazione}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Dipendenza dalla posizione}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Dipendenza dall'angolo}{12}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Altre distribuzioni}{13}{section.6}%
+\contentsline {section}{\numberline {7}Conclusioni}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Distribuzione di V}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Particelle Relativistiche e non}{14}{subsection.7.2}%
+\contentsline {paragraph}{Metodo 1}{14}{section*.35}%
+\contentsline {paragraph}{Metodo 2}{14}{section*.37}%
+\contentsline {subsection}{\numberline {7.3}Attenuazione}{14}{subsection.7.3}%
+\contentsline {section}{\numberline {A}Problemi affrontati}{15}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {A.1}Lunghezza record Dati "ADC Record Lenght"}{15}{subsection.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}Ricerca dei minimi, Threshold}{15}{subsection.Alph1.2}%
+\contentsline {paragraph}{Function: GestioneOff}{15}{section*.39}%
+\contentsline {paragraph}{Function: ThrsDet}{16}{section*.40}%
+\contentsline {subsection}{\numberline {A.3}Miglioramenti e tentativi}{16}{subsection.Alph1.3}%
+\contentsline {paragraph}{Time stamp}{16}{section*.41}%
+\contentsline {subsection}{\numberline {A.4}Scelta}{18}{subsection.Alph1.4}%
+\contentsline {section}{\numberline {B}Repositorio}{18}{appendix.Alph2}%
