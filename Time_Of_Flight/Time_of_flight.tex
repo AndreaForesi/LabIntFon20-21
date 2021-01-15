@@ -23,7 +23,7 @@
 
 
 \begin{abstract}
-Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio e con l'ADC. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella; si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato infatti la maggior parte dei risultati ottenuti.
+Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio e con un ADC. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella; si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato infatti la maggior parte dei risultati ottenuti.
 \end{abstract}
 
 
@@ -37,7 +37,7 @@ Scopo di questa esperienza è quello di misurare la distribuzione della velocit�
 \begin{itemize}
     \item Oscilloscopio 4 canali Tektronix MDO34
     \item Alimentatore 4 canali CAEN DT5533E
-    \item Moduli NIM: ADC converter CAEN N6725S, discriminatore, ritardi, contatore.
+    \item Moduli NIM: ADC converter CAEN N6725S, discriminatore, contatore.
 \end{itemize}
 \end{itemize}
 
@@ -350,7 +350,7 @@ Per questa analisi abbiamo preso diversi segnali in coincidenza tra PMT 1, 2 e 3
      \begin{subfigure}[b]{0.47\textwidth}
          \centering
          \includegraphics[width=\textwidth]{./immagini/TimeOfFlight/VLightBarraADC}
-         \caption{Gli errori sono molto più piccoli rispetto al primo caso per l divisione per $\sqrt{n}$ dove n è proprio il numero di campioni presi per una singola distanza dal PMT-1}
+         \caption{Gli errori sono molto più piccoli rispetto al primo caso per la divisione per $\sqrt{n}$ dove n è proprio il numero di campioni presi per una singola distanza dal PMT-1}
          \label{fig:FitVLightBarraADC}
      \end{subfigure}
      \hfill
@@ -375,7 +375,7 @@ v [$\frac{cm}{ns}$] & off [ns] & $\chi ^2$ & ndof & norm.cov.  \\
 \end{tabular}
 
 In entrambi i casi la velocità è risultata inferiore a quella attesa ($\sim 19\frac{cm}{ns}$) probabilmente perché il fascio di luce non compie delle traiettorie lineari dal punto in cui parte fino al fotocatodo ma riflettendosi lungo le pareti della barra scintillante compie un tragitto più lungo.\\
-Nella misura con l'ADC ci sono troppi pochi dati e lo notiamo dal rapporto $\frac{\chi^2}{ndof}>>1$ 
+Nella misura con l'ADC ci sono troppi pochi dati e lo notiamo dal rapporto $\frac{\chi^2}{ndof}>>1$ dal quale si deduce un' evidente sottostima degli errori 
 
 \newpage
 \section{Misura della distribuzione di V}
@@ -602,7 +602,8 @@ Infine eseguendo il rapporto tra gli istogrammi e dividendolo per l'efficienza(c
 \caption{}
 \end{figure}
 
-\section{Attenuazione}
+\newpage
+\section{Attenuazione segnale luminoso}
 \label{sec:Atte}
 L'efficienza di rivelazione è data anche dalla probabilità del segnale luminoso di raggiungere gli estremi dello scintillatore.\\
 L'energia persa segue teoricamente un andamento esponenziale del tipo
