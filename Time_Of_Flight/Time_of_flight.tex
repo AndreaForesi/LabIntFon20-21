@@ -23,7 +23,7 @@
 
 
 \begin{abstract}
-Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio e con l'ADC. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella, si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato però la maggior parte dei risultati ottenuti.
+Scopo di questa esperienza è quello di misurare la distribuzione della velocità dei raggi cosmici e valutare quale frazione di essi sia relativistica. Per questo intento useremo un apparato sperimentale schematizzato in figura \ref{fig:AppSperSschema}. Per queste misure è necessario conoscere la velocità della luce nella barra scintillante(\ref{sec:VLuce}) calcolata in due maniere con dati presi da oscilloscopio e con l'ADC. Per valutare la frazione di particelle oltre una certa soglia di energia e quindi di velocità si pone del Piombo lungo la traiettoria della particella; si ricostruisce nuovamente il grafico di distribuzione di V e se ne fa un rapporto. Durante l'esperienza sono stati incontrati alcuni problemi. Il primo si tratta dell'efficienza di un fotomoltiplicatore (\ref{sec:CalPMT-4}). Altre difficoltà si sono riscontrate durante la fase di analisi dati per un'incorretta ricostruzione del segnale impulsivo proveniente dai fotomoltiplicatori dovuta a delle caratteristiche dell'ADC converter (\ref{secA:ProblemiADC}). Queste difficoltà di ricostruzione del segnale hanno segnato infatti la maggior parte dei risultati ottenuti.
 \end{abstract}
 
 
@@ -110,7 +110,7 @@ Scopo di questa esperienza è quello di misurare la distribuzione della velocit�
 \end{itemize}
 
 \section{Calibrazione Apparato sperimentale}
-Per trovare i corretti punti di lavoro dei 4 PMT prima si sono discriminati i segnali dal possibile rumore (\ref{sec:DiscrSegn}), poi è stata provata una calibrazione dei singoli PMT per cercare una prima alimentazione tramite il metodo della ricerca del Plateau (\ref{sec:CalSin}). Infine si è proceduti con la calibrazione tramite rapporto tra coincidenze doppie e triple (\ref{sec:Coinc})
+Per trovare i corretti punti di lavoro dei 4 PMT prima si sono discriminati i segnali dal possibile rumore (sec:ref{sec:DiscrSegn}), poi è stata provata una calibrazione dei singoli PMT per cercare una prima alimentazione tramite il metodo della ricerca del Plateau (sec:\ref{sec:CalSin}). Infine si è proceduti con la calibrazione tramite massimizzazione del rapporto tra coincidenze doppie e triple (sec:\ref{sec:Coinc})
 
 \subsection{Discriminazione}
 \label{sec:DiscrSegn}
@@ -124,7 +124,7 @@ Per trovare i corretti punti di lavoro dei 4 PMT prima si sono discriminati i se
 \end{center}
 \end{figure}
 
-La scelta del tempo di lunghezza del segnale output del discriminatore è stata fatta osservando la durata dei tempi di un singolo impulso ($\sim 15$ massimo $20 ns$ come da figura \ref{fig:SegnaliOsc}) al quale però è stato pensato di aggiungere un possibile ritardo dovuto alla differenza di trasmissione. Inoltre dovendo misurare dei ritardi di qualche ns tra due o più segnali, quindi non in coincidenza quasi istantanea sono stati stimati i possibili tempi di percorrenza delle particelle
+La scelta del tempo di lunghezza del segnale output del discriminatore è stata fatta osservando la durata dei tempi di un singolo impulso ($\sim 15$ massimo $20 ns$ come da figura \ref{fig:SegnaliOsc}) al quale però è stato pensato di aggiungere un possibile ritardo dovuto alla differenza di trasmissione. Infatti dovendo misurare dei ritardi di qualche ns tra due o più segnali, quindi non in coincidenza quasi istantanea tra loro, sono stati stimati alcuni possibili tempi di percorrenza delle particelle e dei segnali:
 
 \begin{itemize}
 \item Il primo ritardo è dovuto alla velocità della luce nella barra scintillante lunga: v$_{teorica} = \frac{30\frac{cm}{ns}}{n} = 19 \frac{cm}{ns}$, perciò si ha un ritardo massimo di $\frac{L = 280 [cm]}{v = 19 [\frac{cm}{ns}]} \simeq 15 ns$
@@ -140,7 +140,7 @@ Dopo aver visualizzato i segnali di figura \ref{fig:SegnaliOsc} sono stati scelt
 
 \subsection{Alimentazione}
 \label{sec:CalSin}
-Sono state ricercate le alimentazioni dei PMT-3 e PMT-1
+Sono state ricercate le alimentazioni dei PMT-3 e PMT-1 tramite conteggi in singola
 
 \begin{figure}[H]
 	\centering
@@ -165,7 +165,7 @@ Non avendo osservato un evidente plateau in nessuno dei due grafici (vedi figura
 
 \subsection{Coincidenze}
 \label{sec:Coinc}
-Per la massimizzazione delle coincidenze sono state fatte due prova la prima ricercando un Plateau nel rapporto tra coincidenze, la seconda invece andando a massimizzare l'efficienza osservando che i conteggi in singola non aumentassero di troppi ordini di grandezza
+Per la calibrazione tramite coincidenze sono state fatte due prove, la prima ricercando un Plateau nel rapporto tra coincidenze, la seconda invece andando a massimizzare l'efficienza osservando che i conteggi in singola non aumentassero di troppi ordini di grandezza
 
 \begin{figure}
 \centering
@@ -177,7 +177,7 @@ Per la massimizzazione delle coincidenze sono state fatte due prova la prima ric
 \end{center}
 \end{figure}
 
-\subsubsection{Ricerca Plateau}
+\subsubsection*{Ricerca Plateau}
 Per primo è stato calibrato il PMT-1 dove:\\
 Le coincidenze doppie sono C$_{23}$\footnote{Con C$_{ijk}$ si indica una coincidenza tra i segnali raccolti dai PMT numerti con i, j e k} e le triple C$_{123}$\\
 $V_{Alim2}=V_{Alim3}=1600V$\\
@@ -190,20 +190,20 @@ Soglie impostate a $\sim-45mV$ per i PMT-1e2 e $\sim-50mV$ per il PMT-3
 \label{fig:EffPMT145mV}
 \end{figure}
 
-Osservando la figura \ref{fig:EffPMT145mV} è stata selezionata un'alimentazione di 1510 per un'efficienza del 93.8$\%$ per il PMT-1.\\
-Questa scelta però può essere limitante, facendo un stima delle coincidenze casuali si nota infatti che, anche con un'efficienza ritenuta alta del 96$\%$ sono comunque molto basse:
+Osservando la figura \ref{fig:EffPMT145mV} per il PMT-1 è stata selezionata un'alimentazione di 1510 per un'efficienza del 93.8$\%$.\\
+Questa scelta però può essere limitante, facendo un stima delle coincidenze casuali si nota infatti che, anche con un'efficienza ritenuta alta del 96$\%$, rimangono comunque molto basse:
 
 \begin{equation}
 f_{cas} = f_1 f_2 f_3 \tau _1\tau _2 \simeq (5*10^2)(5*10^2) 10^3 (50*10^{-9})^2 = 6,25*10^{-7} cps
 \label{eq:CoinCasPMT1Prova1}
 \end{equation}
 
-\subsubsection{Massimizzazione dell'efficienza}
-Per questo metodo di calibrazione è stato tenuto il PMT-3 nel centro della barra scintillante e alla stessa altezza e a turno è stato calcolato il rapporto tra coincidenze doppie e triple per PMT-1 e 2.\\
+\subsubsection*{Massimizzazione dell'efficienza}
+Per questo metodo di calibrazione è stato tenuto il PMT-3 nel centro della barra scintillante e a turno è stato calcolato il rapporto tra coincidenze doppie e triple per PMT-1 e 2.\\
 Si sceglie una tensione di alimentazione che corrisponda ad un'efficienza del 98$\%$.
 
 \paragraph{PMT-2; Scelta soglia discriminazione}
-Per la prima calibrazione (PMT-2) si è verificata una possibile dipendenza della curva di efficienza dal valore di soglia impostato con il modulo NIM discriminatore.
+Per la prima calibrazione (PMT-2) si è verificata una possibile dipendenza della curva di efficienza dal valore di soglia impostato con il modulo discriminatore NIM .
 
 \begin{figure}[H]
      \begin{subfigure}[b]{0.49\textwidth}
@@ -235,15 +235,15 @@ Soglia [mV] & V$_{Alim}$ [V] & cps PMT-1 & cps PMT-2 & cps PMT-3\\
 \hline
 \end{tabular}
 
-Non essendoci differenze sostanziali abbiamo preferito la scelta con: soglia = -35mV; V$_{Alim_2}$ = 1400V
+Non essendoci differenze sostanziali è stata preferita la scelta con: soglia = -35mV; V$_{Alim_2}$ = 1400V
 
 \paragraph{PMT-1, soglia -35mV}
-Per il PMT-1 è stata tenuta solamente la soglia a -35 così da tenerlo simile al PMT-2
+Per il PMT-1 è stata tenuta la soglia a -35 così da tenerlo simile al PMT-2
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{./immagini/TimeOfFlight/EffPMT135mV}
-\caption{Per un valore di alimentazione di 1550V sono state trovate un numero maggiore di triple rispetto alle doppie}
+\caption{Per un valore di alimentazione di 1550V sono state trovate un numero maggiore di triple rispetto alle doppie. V$_{Alim_3}=1600V$, V$_{Alim_2}=1400V$}
 \label{fig:EffPMT135mV}
 \end{figure}
 
@@ -253,7 +253,7 @@ Facendo riferimento alla figura \ref{fig:EffPMT135mV} è stato deciso di aliment
 \paragraph{PMT-4}
 \label{sec:CalPMT-4}
 Per questa calibrazione abbiamo posizionato lo scintillatore 3 esattamente sopra lo scintillatore 4 come in figura \ref{fig:PMT3posPMT4}.\\
-Le doppie tra segnali del PMT-3 e PMT-2, le triple con il PMT-4
+Le doppie sono C$_{23}$ e le triple C$_{234}$
 
 \begin{figure}[H]
 \centering
@@ -269,7 +269,7 @@ Notiamo che nonostante lo scintillatore 4 sia notevolmente più grande del 3 l'e
 \title{Posizione PMT-3 e PMT-4}
 \begin{center}
 \includegraphics[scale=0.4]{./immagini/TimeOfFlight/CalPMT4app.jpg}
-\caption{Il PMT-4 è posto sotto del legno, ne è purtroppo poco visibile il perimetro segnato a matita}
+\caption{Lo scinitllatore 4 è posto sotto del legno, ne è purtroppo poco visibile solo il perimetro segnato a matita}
 \label{fig:PMT3posPMT4}
 \end{center}
 \end{figure}
@@ -297,18 +297,20 @@ La luce essendo in un mezzo fisico e non nel vuoto andrà ad una velocità ridot
 
 \subsection{Misure}
 Per la velocità dei segnali all'interno della barra scintillante lunga abbiamo posizionato il PMT-3 in diversi punti della barra così da fissare la distanza percorsa dalla luce e abbiamo associato la velocità seguendo questa formula.\\
-I ritardi tra i segnali letti dai PMT sono stati presi direttamente tramite oscilloscopio
+Le misure nei due metodi differenti sono state presi in momenti diversi 
+
 \begin{equation}
 \Delta t = \frac{2x-L}{v} + (\tau_1 - \tau_2)
 \label{eq:VLuceBarra}
 \end{equation}
+
 dove L è la lunghezza della barra (280 cm) $\Delta t$ il ritardo tra i segnali che leggiamo da oscilloscopio, x la posizione che scegliamo in base a dove poniamo il PMT-3, $\tau_1$ e $\tau_2$ dei possibili ritardi tra le trasmissioni dei segnali che vanno ad influire unicamente sull'offset della retta.\\
 L'inverso del coefficiente angolare sarà la nostra velocità.\\
 L'errore associato alla posizione del PMT-3 è dato dalla larghezza dello scintillatore 3 (22cm) divisa $\sqrt{12}$($\sigma _x = \frac{22}{\sqrt{12}}$) poiché assumiamo che la probabilità che una particella attraversi il materiale è uniforme su tutta la larghezza del rivelatore.
 
 
 \subsection{Analisi dati, Oscilloscopio}
-Sono stati presi 100 di questi eventi tripli per ognuna delle posizioni scelte e ne è stata presa direttamente media e devstd prodotta dall' oscilloscopio. A quel punto ne è stato fatto un fit con la retta in equazione \ref{eq:VLuceBarra}
+Sono stati presi 100 di questi eventi tripli per ognuna delle posizioni scelte e ne è stata presa direttamente media e devstd calcolata dall' oscilloscopio. A quel punto ne è stato fatto un fit con la retta in equazione \ref{eq:VLuceBarra}
 
 \begin{figure}[H]
      \centering
@@ -325,67 +327,74 @@ Sono stati presi 100 di questi eventi tripli per ognuna delle posizioni scelte e
          \caption{}
          \label{fig:ResVLIghtBarra}
      \end{subfigure}
-     \caption{Negli errori è stata considerata anche l'incertezza sulla posizione dovuta alla larghezza dello scintillatore 3: $\sigma = \sqrt{(\sigma _y)^2 + (\frac{\delta f(x_i)}{\delta x}\sigma _x)^2}$}        
+     \caption{}        
      \label{fig:FitLinVLightBarra}
 \end{figure}
 
-Dal fit abbiamo ottenuto i seguenti risultati\footnote{Chi2 = 7,04, ndof= 5, norm cov= 0.86}:
+Dal fit abbiamo ottenuto i seguenti risultati:
 
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-v [$\frac{cm}{ns}$] & off [ns] \\
+v [$\frac{cm}{ns}$] & off [ns] & $\chi ^2$ & ndof & norm.cov. \\
 \hline
--15,28 $\pm$ 0,16 & 20,10 $\pm$ 0,22\\
+-15,28 $\pm$ 0,16 & 20,10 $\pm$ 0,22& 7,04 & 5 & 0,86\\
 \hline
 \end{tabular}
 
 Il segno meno è dovuto alla scelta della differenza tra i PMT-1 e PMT-2.
 
 \subsection{Analisi dati ADC}
-Per questa analisi abbiamo preso diversi segnali in coincidenza tra PMT 1-2 e 3 posizionato in alcune posizioni della barra e fatto media e devstd dei $\Delta t$ ricavati
+Per questa analisi abbiamo preso diversi segnali in coincidenza tra PMT 1, 2 e 3 posizionato in alcune posizioni della barra e fatto media e devstd dei $\Delta t$ ricavati
 
 \begin{figure}[H]
      \begin{subfigure}[b]{0.47\textwidth}
          \centering
          \includegraphics[width=\textwidth]{./immagini/TimeOfFlight/VLightBarraADC}
-         \caption{}
+         \caption{Gli errori sono molto più piccoli rispetto al primo caso per l divisione per $\sqrt{n}$ dove n è proprio il numero di campioni presi per una singola distanza dal PMT-1}
          \label{fig:FitVLightBarraADC}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.47\textwidth}
          \centering
          \includegraphics[width=\textwidth]{./immagini/TimeOfFlight/ResVLightBarraADC}
-         \caption{Negli errori è stata considerata anche l'incertezza sulla posizione dovuta alla larghezza dello scintillatore 3: $\sigma = \sqrt{(\sigma _y)^2 + (\frac{\delta f(x_i)}{\delta x}\sigma _x)^2}$}
+         \caption{}
          \label{fig:ResVLIghtBarraADC}
      \end{subfigure}
-     \caption{}        
+     \caption{In questo come nel caso precedente l'errore sulle x rimane molto piccolo rispetto a quello sulle y e dunque trascurabile}        
      \label{fig:FitLinVLightBarraADC}
 \end{figure}
 
-Dal fit abbiamo ottenuto i seguenti risultati\footnote{Chi2 = 10,01, ndof = 1, norm cov= 0.64}:
+Dal fit abbiamo ottenuto i seguenti risultati:
 
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-v [$\frac{cm}{ns}$] & off [ns] \\
+v [$\frac{cm}{ns}$] & off [ns] & $\chi ^2$ & ndof & norm.cov.  \\
 \hline
--14,50 $\pm$ 0,16 & 22,31 $\pm$ 0,19\\
+-14,48 $\pm$ 0,15 & 22,33 $\pm$ 0,02 & 12,61 & 1 & 0,64\\
 \hline
 \end{tabular}
 
+In entrambi i casi la velocità è risultata inferiore a quella attesa ($\sim 19\frac{cm}{ns}$) probabilmente perché il fascio di luce non compie delle traiettorie lineari dal punto in cui parte fino al fotocatodo ma riflettendosi lungo le pareti della barra scintillante compie un tragitto più lungo.\\
+Nella misura con l'ADC ci sono troppi pochi dati e lo notiamo dal rapporto $\frac{\chi^2}{ndof}>>1$ 
+
+\newpage
 \section{Misura della distribuzione di V}
 \label{sec:MisuraVMu}
 \subsection{Cenni Teorici}
 L'obiettivo di questa sezione è quello di misurare la distribuzione di velocità delle particelle cosmiche che riveliamo grazie all'apparato descritto in sezione \ref{sec:AppSper}.\\
 I muoni hanno vita media molto breve e se visti dal sistema di riferimento nel quale la particella si trova a riposo anche se si muovessero alla velocità della luce questi non raggiungerebbero la Terra. Invece se visti da un osservatore esterno questi per la dilatazione temporale raggiungono il livello del mare.\\
 Dopo aver ricostruito la distribuzione di velocità di questi eventi saranno posizionate delle lastre di Piombo sulla traiettoria delle particelle, i Muoni essendo particelle cariche (carica -e) quando attraversano un mezzo perdono una quantità di energia per unità di lunghezza che segue la curva descritta dall'espressione nota come la "Bethe-Block". Secondo questa curva le particelle con poca energia perdono una quantità di energia maggiore rispetto a quelle più veloci\footnote{Qua mi riferisco unicamente alla parte di curva prima del minimo che si trova intorno a circa 3-4$\beta \gamma$}.\\
-Quindi si ricostruirà un secondo grafico di distribuzione delle velocità delle particelle che avranno attraversato il piombo e sarà confrontato con il primo.
-\subsection{Set-up}
+Quindi si ricostruirà un secondo grafico di distribuzione delle velocità delle particelle che avranno attraversato il piombo che sarà confrontato con il primo.
+
+\subsection*{Set-up}
 Per questo intento si tiene il PMT-3 centrato sopra lo scintillatore 4 come in figura \ref{fig:PMT3posPMT4}\\
-Il tempo di volo e dunque la velocità sarà misurata rispetto al PMT-3 in quanto potrebbe avere una risposta più veloce rispetto al più grande PMT-4 che inoltre ha presentato un difetto in efficienza non di poco conto (vedi \ref{sec:CalPMT-4}). La distanza tra PMT-4 e PMT-3 è molto piccola rispetto ad h e non influirebbe su una misura di TOF fatta con i segali del PMT-4.\\
+Il tempo di volo e dunque la velocità sarà misurata rispetto al PMT-3 in quanto potrebbe avere una risposta più veloce rispetto al più grande PMT-4 che inoltre ha presentato un difetto in efficienza non di poco conto (vedi \ref{sec:CalPMT-4}).\\
 Il piombo sarà posizionato tra PMT3 e 4.\\
 Per queste prese dati ci serviremo dell'ADC converter.
+
 \paragraph{ADC Converter}
-Alcune caratteristiche che hanno Influenzato notevolmente la fase di analisi dati\footnote{vedi l'appendice \ref{secA:ProblemiADC}}
+Alcune caratteristiche che hanno Influenzato notevolmente la fase di analisi dati\footnote{vedi l'appendice \ref{secA:ProblemiADC} per ulteriori dettagli}
+
 \begin{itemize}
 \item Frequenza campionamento 250MHz, un campione ogni 4 ns
 \item Lunghezza singolo record 1030 dati, 4120 ns
@@ -393,8 +402,9 @@ Alcune caratteristiche che hanno Influenzato notevolmente la fase di analisi dat
 
 \subsection{Calcoli}
 \label{sec:CalcoliVMu}
-Considerando il tempo t$_0$ come quello in cui una particella attraversa istantaneamente la barra scintillante\footnote{Se consideriamo anche una velocità di 10$\frac{cm}{ns}$, che a posteriori è molto bassa, in realtà passa dal centro della barra dopo una frazione di ns}, scriviamo i tempi t$_i$, ovvero i tempi necessari ai vari PMT-i di ricevere i segnali e inviarli agli apparecchi di presa dati.\\
-Consideriamo inoltre il centro della barra il punto $x = 0$.\footnote{Sulla barra scintillante dell'esperienza il centro corrispondeva a 140cm di distanza dal PMT-1}
+Considerando il tempo t$_0$ come quello in cui una particella attraversa istantaneamente la barra scintillante\footnote{Se consideriamo anche una velocità di 10$\frac{cm}{ns}$, che a posteriori è molto bassa, in realtà passa dal centro della barra dopo una frazione di ns, dunque un ritardo molto molto piccolo}, scriviamo i tempi t$_i$, ovvero i tempi necessari ai vari canali di acquisizione dati di ricevere i segnali dei PMT.\\
+Consideriamo inoltre il punto $x = 0$ il centro della barra .\footnote{Sulla barra scintillante dell'esperienza il centro corrispondeva a 140cm di distanza dal PMT-1 e 140 dal PMT-2, figura \ref{fig:AppSperSschema}}
+
 \begin{equation}
 t_1 = t_0 + \frac{x}{v_l} + \tau_1
 \end{equation}
@@ -406,8 +416,8 @@ t_3 = t_0 + TOF + \tau_3
 \label{eq:TempiPMT}
 \end{equation}
 
-dove $\tau_i$ sono i vari ritardi dovuti esclusivamente alla trasmissione indica il tempo necessario al segnale luminoso di andare dal punto di incidenza al fotocatodo del PMT, si assume il PMT-3 Prompt, $v_l$ la velocità della luce nella barra scintillante misurata nella sezione \ref{sec:VLuce} e TOF il tempo di volo di una particella.\\
-Da questi 3 tempi troviamo un'espressione che leghi prima i $\Delta t$ misurabili alla posizione di passaggio della particella nella barra e successivamente alla velocità delle particelle\footnote{Nelle seguenti espressioni appariranno termini come $\Delta t_{31}$ o come R$_{12}$, in questi casi si deve fare attenzione all'ordine delle cifre. Per esempio R$_{12}$= $\tau_1$ - $\tau_2 \neq \tau_2 - \tau_1$ = R$_{21}$ quindi $R_{12}=-R_{21}$}
+dove $\tau_i$ sono i vari ritardi dovuti esclusivamente alla trasmissione, cioè il tempo necessario al segnale luminoso di andare dal punto di incidenza al fotocatodo del PMT e da esso poi raggiungere gli strumenti di prea dati; si assume il PMT-3 Prompt. $v_l$ è la velocità della luce nella barra scintillante misurata nella sezione \ref{sec:VLuce} e TOF il tempo di volo di una particella.\\
+Da questi 3 tempi serve trovare un'espressione che leghi prima i $\Delta t$ misurabili alla posizione di passaggio della particella nella barra e successivamente alla velocità delle particelle\footnote{Nelle seguenti espressioni appariranno termini come $\Delta t_{31}$ o come R$_{12}$, in questi casi si deve fare attenzione all'ordine delle cifre a pedice. Per esempio R$_{12}$= $\tau_1$ - $\tau_2 \neq \tau_2 - \tau_1$ = R$_{21}$, quindi $R_{12}=-R_{21}$}
 
 \begin{equation}
 \Delta t_{12} = t_1 - t_2 = t_0 + \frac{x}{v_l} + \tau_1 - t_0 + \frac{x}{v_l} - \tau_2 = 2\frac{x}{vl} + R_{12}
@@ -426,7 +436,7 @@ x = (\Delta t_{12} - R_{12})\frac{v_l}{2}
 \label{eq:PosX}
 \end{equation}
 
-Per i tempi di volo possiamo utilizzare sia il ritardo $\Delta t_{31}$ che $\Delta t_{32}$ oppure mediare i tempi di volo per ricavare un'espressione indipendente dal calcolo della posizione ma unicamente dalle misure sui $\Delta t$:
+Per i tempi di volo possiamo utilizzare sia il ritardo $\Delta t_{31}$ che $\Delta t_{32}$ oppure mediare quest'ultimi per ricavare un'espressione indipendente dal calcolo della posizione ma unicamente dalle misure sui $\Delta t$:
 
 \begin{equation}
 TOF_1 = \Delta t_{31} + \frac{x}{v_l} - R_{31}
@@ -453,16 +463,33 @@ dove h è l'altezza della barra scintillante dal PMT-3, x la posizione rispetto 
 \subsection{Misure}
 \label{sec:MisureV}
 \paragraph{Misura del TimeStamp}
-Per misurare l'istante in cui passa un segnale (50$\%$ del minimo del segnale) è stato considerato il baricentro della discesa del segnale con qualche dato in più sia a tempi maggiori del minimo che a tempi minori dell'inizio del segnale. In particolare un campione prima della partenza del segnale e 3 dopo il minimo del segnale\footnote{Vedi appendice \ref{secA:Scelta}}
+Per misurare l'istante in cui passa un segnale ( per definizione 50$\%$ del minimo del segnale) è stato considerato il baricentro della discesa del segnale con qualche dato in più sia a tempi maggiori del minimo che a tempi minori dell'inizio del segnale. In particolare un campione prima della partenza del segnale e 3 dopo il minimo del segnale\footnote{Vedi appendice \ref{secA:Scelta}}
 
 \paragraph{Ritardi R$_{ij}$; i,j=1,2,3}
 Per misurare i Ritardi dovuti alla trasmissione del segnale (R$_{ij}$ in equazione \ref{eq:VMu}) è stato posizionato il PMT-3 sul centro della barra scintillante lunga triggerando sulle triple C$_{123}$
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{./immagini/TimeOfFlight/Rit21Fore.jpg}
+\title{Ritardi PMT, $\tau_i - \tau _j$}
+\begin{center}
+\begin{subfigure}[b]{0.32\textwidth}
+\includegraphics[width=\textwidth]{./immagini/TimeOfFlight/Rit21Fore.jpg}
 \caption{}
 \label{fig:Dt21Fore}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+\includegraphics[width=\textwidth]{./immagini/TimeOfFlight/Rit31Fore.jpg}
+\caption{}
+\label{fig:Dt31Fore}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+\includegraphics[width=\textwidth]{./immagini/TimeOfFlight/Rit32Fore.jpg}
+\caption{}
+\label{fig:Dt32Fore}
+\end{subfigure}
+\end{center}
 \end{figure}
 
 Per ogni istogramma come quello di figura \ref{fig:Dt21Fore} sono stati eseguiti dei fit con una gaussiana per stimare i ritardi tra i PMT
@@ -485,7 +512,7 @@ E dunque la distribuzione di velocità è
 \label{fig:VFore}
 \end{figure}
 
-\subsection{Eventi Ultrarelativistici e non}
+\subsection{Eventi Ultrarelativistici}
 \label{sec:RapportoU-N}
 \paragraph{Conti sul Piombo}
 Osservando la figura \ref{fig:VFore} è stato deciso di tagliare gli eventi con velocità inferiore a 20$\frac{cm}{ns}$
@@ -498,8 +525,8 @@ Così sono state posizionate tra il PMT-3 e PMT-4 7 lastre di piombo di 2 cm cia
 
 \paragraph{2 Metodi}
 Data la bassa efficienza del PMT-4 sono stati pensati due metodi per valutare la quantità di particelle che vengono assorbite dalle lastre di Piombo.\\
-Il primo metodo è quello di confrontare due istogrammi normalizzati di quadruple senza piombo e quadruple con il piombo\footnote{Per quadruple intendiamo coincidenze tra tutti i 4 PMT, C$_{1234}$}. In questa maniera si eviterebbe il problema di conteggi minori dovuti all'efficienza del PMT-4.\\
-In alternativa si potrebbe stimare l'efficienza del PMT-4 tramite coincidenze triple e quadruple di una presa dati senza piombo lungo la traiettoria, e successivamente si misureranno i rapporti tra coincidenze Triple e Quadruple con il Piombo dividendo per l'efficienza precedentemente stimata.
+Il primo metodo è quello di confrontare due istogrammi normalizzati di quadruple senza piombo e quadruple con il piombo\footnote{Per quadruple intendiamo coincidenze tra tutti i 4 PMT, C$_{1234}$}. In questa maniera si eviterebbe il problema di conteggi minori dovuti all'efficienza del PMT-4 in quanto inclusi nei dati.\\
+In alternativa si potrebbe stimare l'efficienza del PMT-4 tramite rapporto di coincidenze triple e quadruple di una presa dati senza piombo lungo la traiettoria, e successivamente si misureranno i rapporti tra coincidenze Triple e Quadruple di prese dati con il Piombo dividendo per l'efficienza precedentemente stimata.
 
 \subsubsection*{Metodo 1, Rapporto quadruple normalizzate}
 
@@ -522,7 +549,7 @@ C$_{1234}$ con Pb[$\frac{cm}{ns}$] & 30,1 $\pm$ 7,3
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{./immagini/TimeOfFlight/VRappFore.jpg}
-\caption{Rapporto $\frac{quadruple con Pb}{Quadruple senza Pb}$.}
+\caption{Rapporto $\frac{Quadruple con Pb}{Quadruple senza Pb}$.}
 \label{fig:VRappFore}
 \end{figure}
 
@@ -533,11 +560,11 @@ Si prova questo metodo per poter utilizzare lo stesso set di eventi così da evi
 \paragraph{Efficienza PMT-4}
 Sapendo che le quadruple lette valgono:
 \begin{equation}
-N_{Quadruple} = N_{Triple} * N_{Eventi positivi} * Eff
+N_{Quadruple} = N_{Eventi positivi} * Eff
 \end{equation}
 Allora il numero di eventi che passano il Pb vale:
 \begin{equation}
-N_{Eventi positivi} = \frac{N_{Quadruple}}{N_{Triple}*Eff}
+\frac{N_{Eventi positivi}}{N_{Triple}} = \frac{N_{Quadruple}}{Eff}*\frac{1}{N_{Triple}}
 \label{eq:VRappMet2}
 \end{equation}
 
@@ -617,8 +644,8 @@ Dalla figura \ref{fig:AttenuazioneDoppia} si nota un andamento di tipo esponenzi
 \end{subfigure}
 \end{figure}
 
-Nonostante il riconoscimento delle triple nei dati in figura \ref{fig:AttenuazioneDoppia} notiamo dallo scaterplot \ref{fig:AttenuazioneTripla} la presenza di segnali rivelati ad energie inferiori, e come si vede dalla figura \ref{fig:AttenuazioneTriplaFitta} questi dati sono effettivamente delle particelle passanti per il sistema poiché ottenuti tramite coincidenze triple tra i PMT(1-2-3).\\
-Per valutarne effettivo andamento sono stati provati due fit con il modello di equazione \ref{eq:AttLuce}($L_0 = a$).\\
+Nonostante il riconoscimento delle triple dei dati in figura \ref{fig:AttenuazioneDoppia} notiamo dallo scaterplot \ref{fig:AttenuazioneTripla} la presenza di segnali rivelati ad energie inferiori, e come si vede maggiormente dalla figura \ref{fig:AttenuazioneTriplaFitta} questi dati sono effettivamente delle particelle passanti per il sistema poiché ottenuti tramite coincidenze triple tra i PMT(1-2-3).\\
+Per valutare l'effettivo andamento dei dati sono stati provati due fit con il modello di equazione \ref{eq:AttLuce}($L_0 = a$).\\
 Nel caso del Fit-1 sono stati tagliati i dati a bassa intensità, nel secondo, Fit-2 sono stati considerati anche quelli.\footnote{La figura è uno zoom di tutti i dati per evidenziare la zona comprendente la quantità maggiore di dati. Ci sono alcuni dati evidentemente molto lontani dalla realtà che sono stati eliminati da entrambi i fit.}\\
 I risultati segnati in figura sembrano avvicinarsi alla lunghezza di attenuazione segnata nel datasheet della barra di 210 cm
 
@@ -641,7 +668,7 @@ C_1(x)C_2(x) = f(\theta)^2 C_1C_2 e^{-\frac{L}{l}}
 Dove però anche $C_1$ e $C_2$ dipendono da $\theta$ e quindi il prodotto tra gli integrali del segnale diventa una funzione solo di theta.\\
 Per trasformare la variabile posizione (x) in $\theta$:
 \begin{equation}
-\theta = arctg(\frac{h}{x})
+cos(\theta) = \frac{h}{d}
 \label{eq:XtoTheta}
 \end{equation}
 dove h è l'altezza della barra scintillante dal PMT-3
@@ -659,6 +686,11 @@ Dai dati usati in figura \ref{fig:DipendenzaAngolo} è stato inoltre possibile v
 OltreUnaSoglia [\%] = \frac{Cariche Alte}{Tot Eventi} \simeq \frac{61810}{76452} = 80 \% 
 \end{equation}
 
+\paragraph{Commento finale}
+Per quanto riguarda i comportamenti dell'attenuazione del segnale luminoso nella barra scintillante i due fit provati in figura \ref{fig:AttenuazioneTriplaFitta} mostrano come l'andamento possa essere buono in quanto, seppur le misure non siano accurate, non sono stati riscontrati comportamenti stravaganti.\\
+Per quanto riguarda la fascia di dati a cariche inferiori, visibile in tutti i grafici di questa sezione (\ref{sec:Atte}), sappiamo non essere dovuti solo a rumore in quanto presenti anche negli scatter plot ottenuti con eventi di triple tra PMT(1-2-3) con i PMT come in figura \ref{fig:PMT3posPMT4}, e sappiamo non dipendere nemmeno dalla luce poiché una semplice verifica di conteggi a luce accesa e spenta non mostra sostanziali differenze.
+
+\newpage
 \section{Altre distribuzioni}
 \begin{figure}[H]
 \begin{subfigure}[b]{0.4\textwidth}
@@ -676,9 +708,9 @@ OltreUnaSoglia [\%] = \frac{Cariche Alte}{Tot Eventi} \simeq \frac{61810}{76452}
 
 \begin{figure}[H]
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{./immagini/TimeOfFlight/DistrCos.jpg}
-\caption{$Cos(\theta) = \frac{x}{d}$}
-\label{fig:DistrCos}
+\includegraphics[width=\textwidth]{./immagini/TimeOfFlight/DistrTheta.jpg}
+\caption{$\theta = arcos(\frac{h}{d})$}
+\label{fig:DistrTheta}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.4\textwidth}
@@ -688,26 +720,17 @@ OltreUnaSoglia [\%] = \frac{Cariche Alte}{Tot Eventi} \simeq \frac{61810}{76452}
 \end{subfigure}
 \end{figure}
 
+\newpage
 \section{Conclusioni}
-\subsection{Proprietà barra scintillante}
-\subsubsection{Velocità dei segnali}
-La velocità è risultata inferiore a quella attesa ($\sim 19\frac{cm}{ns}$) probabilmente perché il fascio di luce non compie delle traiettorie lineari dal punto in cui parte fino al fotocatodo ma riflettendosi lungo le pareti della barra scintillante compie un tragitto più lungo.
-
-\subsubsection{Attenuazione dei segnali}
-Per quanto riguarda i comportamenti dell'attenuazione del segnale luminoso denella barra scintillante i due fit provati in figura \ref{fig:AttenuazioneTriplaFitta} mostrano come l'andamento possa essere buono in quanto, seppur le misure non siano accurate non sono
-stati riscontrati comportamenti stravaganti.\\
-Per quanto riguarda la fascia di dati a cariche inferiori, visibile in tutti i grafici di sezione \ref{sec:Atte}, sappiamo non essere solo rumore in quanto presenti anche negli scatter plot ottenuti con eventi di triple tra PMT(1-2-3) con PMT come in figura \ref{fig:PMT3posPMT4}, e sappiamo non dipendere nemmeno dalla luce poiché una semplice verifica di conteggi a luce accesa e spenta mostra una differenza veramente irrisoria.
-
-
-\subsection{Distribuzione di V}
+\subsection*{Distribuzione di V}
 La distribuzione di V di figura \ref{fig:VFore} sembra ben centrata su una media di circa 30$\frac{cm}{ns}$ con una larghezza che non spaventa. Infatti se pensiamo che i tempi di volo per particelle relativistiche sono di circa 6-8 ns(Valori stimati e anche visibili in figura \ref{fig:DistrTof}), con errori di circa 2ns dovuti alla larghezza degli istogrammi dei ritardi(vedi per esempio \ref{tab:RitFore}) si hanno errori del 30-40$\%$, riportati sulla velocità ricaviamo un'ampiezza a metà altezza di una decina di ns. Per quanto riguarda la coda della distribuzione di V che troviamo per velocità molto maggiori della luce non sembra implicata ad un'incorretta stima della posizione di incidenza ma piuttosto ad errori nella distribuzione di TOF (Vedi \ref{fig:DistrX} per la posizione e \ref{fig:DistrTof} per il tempo di volo).\\
 La normalizzazione sembra essere corretta ed equa in entrambi i casi con e senza Piombo in quanto gli integrali della distribuzione valgono entrambi 0,97
-\subsubsection{Particelle Relativistiche e non}
+\subsection*{Eventi Ultrarelativistici}
 \paragraph{Metodo 1}
 Dai risultati ottenuti con il primo metodo si nota dalla figura \ref{fig:VRappFore} che le particelle con velocità inferiori a 10$\frac{cm}{ns}$ sembrano essersi fermate nel piombo non raggiungendo il PMT-4, questo potrebbe aver determinato l'aumento della velocità media da 29,6$\pm$6,9 a 30,1$\pm$7,3 $\frac{cm}{ns}$; un aumento dell' 1,6$\%$ sulle medie stimate.\\
 Quello che invece non piace sono le velocità comprese tra 10 e 20 $\frac{cm}{ns}$. In questa regione seppur gli errori sulle misure siano abbastanza grandi dovremmo aver visto una salita verso un rapporto pari ad 1 cosa che invece non si riesce a vedere
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \title{Zoom della distribuzione di V}
 \begin{center}
@@ -743,7 +766,7 @@ Alcuni errori sono stati commessi nei codici di analisi dati e successivamente r
 Qua sono riportate alcune correzioni e errori commessi in ordine di come sono stati trovati.\\
 Durante la descrizione dei problemi saranno indicate alcune delle funzioni scritte e utilizzate per l'analisi dati, spero di inserire il link del repositorio online per una visualizzazione
 
-\subsection{Lunghezza record Dati "ADC Record Lenght"}
+\subsection{Coincidenze casuali: "ADC Record Lenght"}
 \label{secA:RecLenght}
 Il primo problema è legato alla lunghezza del record di dati che l'ADC restituisce ogni qual volta scatti il trigger impostato generalmente su una tripla C$_{123}$.\\
 Una delle cause che faceva risultare una particella ultrarelativistica era che nello stesso record di dati non vi era solo l'evento triggerante ma anche un secondo evento (a volte una doppia o anche un segnale rivelato in un unico PMT). Questa "coincidenza casuale" faceva si che il codice di analisi dati riportasse come $\Delta t$ un intervallo di tempo tra due impulsi relativi a due eventi diversi e non allo stesso.\\
@@ -769,7 +792,7 @@ Facendo questa operazione è stato possibile eliminare segnali come quelli in fi
 \end{center}
 \end{figure}
 
-\subsection{Ricerca dei minimi, Threshold}
+\subsection{Analisi dati, Ricerca dei minimi}
 \label{secA:Threshold}
 Più volte in analisi dati come visto precedentemente (\ref{secA:RecLenght}) è stato necessario determinare una certa soglia per discriminare quale fosse un minimo del segnale, oppure quale fosse l'inizio o la fine di un segnale.
 \paragraph{Function: GestioneOff}
@@ -784,7 +807,7 @@ $\frac{Sigma}{Absolute min}$
 è stato scelto di fare un istogramma di questi risultati e selezionare una soglia il più bassa possibile per perdere meno eventi possibile\footnote{Come si vede nelle funzioni ...Recognize() è stata scelta per tutti i PMT una soglia di 15 Sigma}.
 
 
-\subsection{Miglioramenti e tentativi}
+\subsection{Segnali mal riprodotti, "ADC Sample Rate"}
 \label{sec:Tentativi}
 L'altra limitazione che è stata affrontata è quella dovuta al rate di campionamento dell'ADC.\\
 L'ADC N6725S campiona con una frequenza di 250MHz cioè un campione ogni 4 ns e sapendo che i segnali sono in media lunghi dai 15 a 20 ns e sono di tipo impulsivo, la ricostruzione di questi, in particolare del picco, da parte dello strumento non è ottimale.
@@ -954,15 +977,15 @@ Rit 2-1 [ns] & Rit 3-1 [ns] & Rit 3-2 [ns] \\
 
 
 
-\subsection{Scelta}
+\subsection{Scelta calcolo Time-Stamp}
 \label{secA:Scelta}
 La scelta tra i vari metodi di calcolo del TimeStamp è stata fatta considerando i risultati ottenuti tramite fit delle distribuzioni dei ritardi tra i PMT e la relativa ricostruzione della distribuzione di V.\\
 \'E stato scelto di utilizzare il metodo tramite integrazione di una parte più ampia della discesa del segnale, in particolare 4ns(1 campione dell'adc) prima dell'inizio del segnale e 12 ns dopo il minimo di esso (3 campioni otre).\\
-In questa maniera oltre che rimanere fedeli alla definizione di TimeStamp si considera una parte di segnale che a meno di ampiezza differenti che, nel caso della ricerca del baricentro non influisce in modo determinante, rimane molto simile tra i vari segnali. Inoltre si potrebbero mediare eventuali problemi di ricostruzione del picco e alcuni fastidiosi ringing che può presentare il segnale
+In questa maniera oltre che rimanere il più possibile fedeli alla definizione di TimeStamp si considera una parte di segnale che a meno di ampiezze differenti, che nel caso della ricerca del baricentro non influisce in modo determinante, rimane molto simile tra i vari segnali. Inoltre si potrebbero mediare eventuali problemi di ricostruzione del picco e non considerare alcuni fastidiosi ringing che può presentare il segnale.
 
-\section{Repositorio}
+\section*{Repositorio}
 Ho inserito un repositorio online al link:\\
-\url{https://github.com/AndreaForesi/Laboratorio-Interazioni-Fonddamentali-20-21}\\
+\url{https://github.com/AndreaForesi/LabIntFon20-21.git}\\
 Verificarne l'aggiornamento e la riutilizzabilità
 
 \end{document}
