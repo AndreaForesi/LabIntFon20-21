@@ -76,6 +76,7 @@ def estrai_segnale(channel,time,start_time,stop_time):
 
 """-Threshold for discrimination of signal"""
 def ThrsDet(PMTDataFile):
+    import re
     logging.basicConfig(level=logging.INFO)
     Re_Num=re.compile('\d+')
     Re_Record=re.compile('\ARecord')
@@ -93,7 +94,8 @@ def ThrsDet(PMTDataFile):
                 #incrementa la lista di dati dell'evento ricercato
                 data=np.append(data,np.array([int(line)]))
             if Re_Record.match(line):
-                logging.info(f'Lettura evento {evento}')
+                if (evento%500==0):
+                    logging.info(f'Lettura evento {evento}')
                 try:
                     Sign, Sigma = Gestioneoff(data)
                     minRapp=np.append(minRapp,np.array([np.abs(np.min(Sign))/Sigma]))
@@ -186,6 +188,7 @@ def DoubleRecognize(channel1,channel2):
                     if M1<m1: M1=m1
                     if M2<m2: M2=m2
                     Double = True
+    
 
     if Double:
         inf,sup = CreaInt(M1,13)
